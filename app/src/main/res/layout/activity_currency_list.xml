@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrencyList"
+    android:background="@color/currencyColor">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar_layout"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="@color/currencyColor"
+            app:theme="@style/ThemeOverlay.AppCompat"
+            >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_currency"
+            android:hint="Search Currency"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/ic_search_black_18dp"
+            android:drawablePadding="10dp"
+            />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/currency_list_recycler_view"
+        android:layout_below="@id/app_bar_layout"
+        android:layout_margin="6dp"
+        />
+
+</RelativeLayout>
