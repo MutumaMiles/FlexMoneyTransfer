@@ -17,9 +17,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CurrencyChooserActivity"></activity>
-        <activity android:name=".CurrencyList"></activity>
-        <activity android:name=".AddRecepeintActivity"></activity>
+        <activity android:name=".CurrencyChooserActivity" />
+        <activity android:name=".CurrencyList" />
+        <activity android:name=".RecipientsActivity" />
+        <activity android:name=".AddRecipientActivity" />
+        <activity android:name=".TransferDetailsActivity" />
+        <activity android:name=".AddCustomerDetails"></activity>
     </application>
 
 </manifest>

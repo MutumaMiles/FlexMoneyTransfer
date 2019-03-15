@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -129,6 +130,13 @@ public class CurrencyChooserActivity extends AppCompatActivity {
             }
         });
 
+        Button proceedbtn = findViewById(R.id.proceed);
+        proceedbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(RecipientsActivity.newInstance(CurrencyChooserActivity.this));
+            }
+        });
     }
 
     private void sentToEmoji(TextView countryFlagTxt, TextView countryCodeTxt) {

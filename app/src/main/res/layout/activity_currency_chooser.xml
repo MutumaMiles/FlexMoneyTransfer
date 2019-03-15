@@ -168,5 +168,6 @@
         android:layout_alignParentBottom="true"
         android:background="@color/colorGreen"
         android:text="Continue"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:id="@+id/proceed"/>
 </RelativeLayout>
